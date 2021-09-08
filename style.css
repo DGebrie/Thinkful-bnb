@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -41,7 +41,7 @@ main img {
   flex-direction: column;
 }
 
-@media all and (mid-width: 480px) {
+@media all and (min-width: 480px) {
   .group {
     flex-direction: row;
     align-items: center;
@@ -65,21 +65,21 @@ header {
   text-align: center;
 }
 
-@media all and (mid-width: 480px) {
+@media all and (min-width: 480px) {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0%;
+    padding: 0;
   }
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
 }
 
-@media all and (mid-width: 480px) {
+@media all and (min-width: 480px) {
   .logo {
     margin: 15px 0 15px 20px;
     padding-top: 0;
@@ -87,11 +87,16 @@ header {
   }
 }
 
-header nav ul {
-  align-items: center;
+header nav {
+  display: flex;
+  justify-content: center;
 }
 
-@media all and (mid-width: 480px) {
+header nav ul {
+  display: flex;
+}
+
+@media all and (min-width: 480px) {
   header nav ul {
     align-items: center;
   }
@@ -118,12 +123,12 @@ form {
   padding: 10px;
 }
 
-@media all and (mid-width: 480px) {
+@media all and (min-width: 480px) {
   form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -136,7 +141,7 @@ form div {
   justify-content: space-between;
 }
 
-@media all and (mid-width: 480px) {
+@media all and (min-width: 480px) {
   form div {
     flex-direction: column;
   }
@@ -148,10 +153,10 @@ form input {
   width: 180px;
 }
 
-@media all and (mid-width:480px) {
-  form select form input {
-    margin-bottom: 20px;
-    width: 180px;
+@media all and (min-width: 480px) {
+  form select,
+  form input {
+    margin-bottom: 0;
   }
 }
 
